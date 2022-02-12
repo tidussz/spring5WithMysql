@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Library demo</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1 th:text="#{index.author.list}"></h1>
+
+<a th:href="@{author/list}"><span th:text="#{index.author.list}"></span></a><br/>
+<a th:href="@{book/list}"><span th:text="#{index.book.list}"></span></a>
+
+<br/><br/>
+
+<span th:text="#{lang.change}"></span>:
+<select id="locales">
+    <option value=""></option>
+    <option value="en" th:text="#{lang.en}"></option>
+    <option value="es" th:text="#{lang.es}"></option>
+</select>
+
+</body>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#locales").change(function () {
+        var selectedOption = $('#locales').val();
+        if (selectedOption != ''){
+            window.location.replace('/?lang=' + selectedOption);
+        }
+    });
+});
+</script>
+
+</html>
