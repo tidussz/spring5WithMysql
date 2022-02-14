@@ -22,7 +22,7 @@ public class Book extends BaseEntity {
 	@Column(name="title")
 	private String title;
 	
-	@Column(name="numOfPages")
+	@Column(name="num_of_pages")
 	private Integer numOfPages;
 	
 	@Column(name="price")
