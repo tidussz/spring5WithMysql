@@ -12,7 +12,7 @@
 	<artifactId>Spring5</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring5</name>
-	<description>Demo project for Spring Course: Spring Framework 5: Beginner to Guru</description>
+	<description>Demo project for Spring Course: Spring Framework 5: Beginner to Guru using MySql dtabase</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
